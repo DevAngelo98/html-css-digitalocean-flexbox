@@ -173,6 +173,10 @@ p.after_new:hover {
  padding-bottom: 64px;
 }
 
+.background_header  .container-fluid  .left_text{
+    padding-top: 80px;
+}
+
 .my_form {
  width: 80%;
  margin: 0 auto;
@@ -236,7 +240,7 @@ p.after_new:hover {
  right: 8px;
 }
 
-#my_btn_social{
+.my_btn_social{
  padding: 10px 16px;
 }
 
@@ -274,12 +278,20 @@ p.after_new:hover {
 
 #logo_list ul {
  list-style-type: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
 }
 
 #logo_list ul li {
+ width: calc(100%/6);
+}
+
+/* #logo_list ul {
  display: inline-block;
  width: calc((100%/6) - 4px);
-}
+} */
 
 #logo_list ul li img{
  max-width: 80%;
@@ -383,6 +395,10 @@ footer .my_col_6 {
 @media screen and (max-width: 959px) {
  #around-world .row.clearfix [class*="col_6"]{
   width: 100%;
+ }
+  #logo_list ul li {
+      width: 50%;
+  }
  }
 
  #around-world ul,
